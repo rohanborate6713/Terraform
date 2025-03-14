@@ -6,3 +6,12 @@ terraform --version
 init --> initialization                                 --> terrafrom init
 plan --> plan  (how your automation looks like)         --> 
 apply --> apply  (execute script)                       -->
+
+
+#Terraform providers
+Available in Terraform registry
+
+https://registry.terraform.io/
+
+
+

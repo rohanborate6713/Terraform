@@ -1,5 +1,7 @@
 #basic terraform syntax
 
+#for new file creation
+
 # <block> <paramater> {
 #    <arguments>
 # }
