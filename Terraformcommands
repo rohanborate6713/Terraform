@@ -1,0 +1,8 @@
+#to check the terraform version
+terraform --version
+
+#To run the terraform script
+#steps
+init --> initialization                                 --> terrafrom init
+plan --> plan  (how your automation looks like)         --> 
+apply --> apply  (execute script)                       -->
