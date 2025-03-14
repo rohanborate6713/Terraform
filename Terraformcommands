@@ -14,4 +14,60 @@ Available in Terraform registry
 https://registry.terraform.io/
 
 
+#Additional Terraform Commands
 
+## Format and validate configuration
+- Format the configuration files:
+    ```sh
+    terraform fmt
+    ```
+- Validate the configuration files:
+    ```sh
+    terraform validate
+    ```
+
+## Manage Terraform state
+- Show the current state:
+    ```sh
+    terraform show
+    ```
+- List resources in the state:
+    ```sh
+    terraform state list
+    ```
+- Remove a resource from the state:
+    ```sh
+    terraform state rm <resource>
+    ```
+
+## Destroy infrastructure
+- Destroy the infrastructure managed by Terraform:
+    ```sh
+    terraform destroy
+    ```
+
+## Output values
+- Show output values from the state file:
+    ```sh
+    terraform output
+    ```
+
+## Workspaces
+- List all workspaces:
+    ```sh
+    terraform workspace list
+    ```
+- Create a new workspace:
+    ```sh
+    terraform workspace new <workspace_name>
+    ```
+- Select a workspace:
+    ```sh
+    terraform workspace select <workspace_name>
+    ```
+- Delete a workspace:
+    ```sh
+    terraform workspace delete <workspace_name>
+    ```
+
+  
