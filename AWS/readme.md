@@ -13,8 +13,11 @@ Before you can use Terraform to manage AWS resources, follow these steps:
 2. **Install AWS CLI**:
     - Download and install the AWS CLI:
       ```sh
-      curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-      sudo installer -pkg AWSCLIV2.pkg -target /
+      
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+     unzip awscliv2.zip
+     sudo ./aws/install
+     
       ```
 
 3. **Create an IAM User**:
