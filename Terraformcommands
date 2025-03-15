@@ -14,6 +14,59 @@ Available in Terraform registry
 https://registry.terraform.io/
 
 
+## Terraform Meta-Arguments
+
+### `depends_on`
+- Ensure a resource is created after another resource:
+    ```hcl
+    resource "aws_instance" "example" {
+      depends_on = [aws_security_group.example]
+      # other arguments
+    }
+    ```
+
+### `count`
+- Create multiple instances of a resource:
+    ```hcl
+    resource "aws_instance" "example" {
+      count = 3
+      # other arguments
+    }
+    ```
+
+### `for_each`
+- Create resources from a map or set of strings:
+    ```hcl
+    resource "aws_instance" "example" {
+      for_each = var.instances
+      # other arguments
+    }
+    ```
+
+### `lifecycle`
+- Customize resource lifecycle behavior:
+    ```hcl
+    resource "aws_instance" "example" {
+      lifecycle {
+        create_before_destroy = true
+        prevent_destroy = true
+      }
+      # other arguments
+    }
+    ```
+
+### `provider`
+- Specify which provider configuration to use:
+    ```hcl
+    resource "aws_instance" "example" {
+      provider = aws.west
+      # other arguments
+    }
+    ```
+
+
+
+
 #Additional Terraform Commands
 
 ## Format and validate configuration
